@@ -1,2 +1,2 @@
-# yinyang
-YinYang Animation in React Native
+# ☯️ Yin Yang
+Yin Yang Animation in React Native
