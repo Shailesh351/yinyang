@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View, Text, StatusBar} from 'react-native';
+import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 import YinYang from './YinYang';
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.safeArea}>
-        <YinYang />
+        <YinYang size={300} />
       </SafeAreaView>
     </>
   );
