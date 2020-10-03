@@ -10,11 +10,11 @@ const YinYang = () => {
         <View style={styles.black} />
         <View style={styles.white} />
         <View style={styles.middle}>
-          <View style={styles.middleWhite}>
-            <View style={styles.innerBlack} />
+          <View style={[styles.middleCommon, styles.middleWhite]}>
+            <View style={[styles.innerCommon, styles.innerBlack]} />
           </View>
-          <View style={styles.middleBlack}>
-            <View style={styles.innerWhite} />
+          <View style={[styles.middleCommon, styles.middleBlack]}>
+            <View style={[styles.innerCommon, styles.innerWhite]} />
           </View>
         </View>
       </View>
@@ -55,33 +55,29 @@ const styles = StyleSheet.create({
     right: 0,
     flexDirection: 'row',
   },
-  middleWhite: {
+  middleCommon: {
     width: size / 2,
-    backgroundColor: 'white',
     borderRadius: size / 4,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  innerCommon: {
+    width: size / 8,
+    height: size / 8,
+    borderRadius: size,
+    overflow: 'hidden',
+  },
+  middleWhite: {
+    backgroundColor: 'white',
   },
   innerBlack: {
-    width: size / 8,
-    height: size / 8,
-    borderRadius: size,
     backgroundColor: 'black',
-    overflow: 'hidden',
   },
   middleBlack: {
-    width: size / 2,
     backgroundColor: 'black',
-    borderRadius: size / 4,
-    alignItems: 'center',
-    justifyContent: 'center',
   },
   innerWhite: {
-    width: size / 8,
-    height: size / 8,
-    borderRadius: size,
     backgroundColor: 'white',
-    overflow: 'hidden',
   },
 });
 
