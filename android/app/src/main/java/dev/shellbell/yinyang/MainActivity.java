@@ -1,4 +1,4 @@
-package com.yinyang;
+package dev.shellbell.yinyang;
 
 import com.facebook.react.ReactActivity;
 
