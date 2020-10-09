@@ -23,7 +23,6 @@ const App = () => {
   const [size, setSize] = useState(300);
   const [speed, setSpeed] = useState(1500);
   const [direction, setDirection] = useState(DIRECTION.CLOCKWISE);
-  console.log(speed);
 
   const clockWise = () => {
     setDirection(DIRECTION.CLOCKWISE);
