@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 
 const YinYang = (props) => {
-  const styles = yinYangStyles(props.size || 300);
+  const styles = yinYangStyles(props.size || 1);
   return (
     <View style={styles.container}>
       <View style={styles.outer}>
